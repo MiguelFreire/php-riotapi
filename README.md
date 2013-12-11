@@ -40,3 +40,10 @@ How to use
     $foo = new RiotAPI;
     $foo->setKey('Your-API-KEY');
     $foo->getChampions();
+    
+    
+Composer Require
+===========
+    "require": {
+        "miguelfreire/riot-api": "v1.0"
+    },
