@@ -8,56 +8,22 @@ Fully compatible with composer!
 Available Functions
 ===========
 
-getChampions($free, $region)
-	$free 		-> bool
-	$region 	-> string
+getChampions()
 
-getSummonerBy($summoner, $by, $region)
-	$summoner 	-> string or int
-	$by 		-> string -> "id" or "name"
-	$region 	-> string
-	
+getSummonerBy()
 
-getSummoner($summoner_id, $options, $region)
-	$summoner_id 	-> int
-	$options 	-> string -> "runes" or "masteries" or "name"
-	$region 	-> string
+getSummoner()
 
-getRecentGames($summoner_id, $region)
-	$summoner_id	-> int
-	$region 	-> string
+getRecentGames()
 
-getLeagues($summoner_id, $region)
-	$summoner_id	-> int
-	$region 	-> string
+getLeagues()
 
-getPlayerStats($summoner_id, $options, $season, $region)
-	$summoner_id	-> int
-	$options 	-> string -> "summary" or "ranked"
-	$season		-> string -> "SEASON3" or "SEASONX"
-	$region 	-> string
+getPlayerStats()
 
 getTeam()
-	$summoner_id	-> int
-	$region 	-> string
 
-setKey($key)
-	$key 		-> string
+setKey()
 
-setRegion($region) 
-	$region		-> string
-
-Available Regions and their functions:
-===========
-### Regions
-
-| Regions          	 | Tag    | Functions  					   |
-| -----------------------|:------:| ----------------------------------------------:|
-| Europe West      	 | euw 	  | champions, game, league, stats, summoner, team |
-| Europe Nordic and East | eune   | champions, game, league, stats, summoner, team |
-| North America    	 | na     | champions, game, league, stats, summoner, team |	
-| Turkey   		 | tr     | league                                         |	
-| Brasil   		 | br     | league 					   |		
 
 How to use
 ===========
@@ -66,7 +32,7 @@ How to use
 
 2- In a new folder inside your composer project create a php file
 
-3- Include composer's autoload and create an RiotAPI instance
+3- Include composer's autoload and call the class
 
 
     require_once __DIR__ . '/../vendor/autoload.php';
