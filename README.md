@@ -39,6 +39,7 @@ How to use
     use RiotAPI\RiotAPI;
     $foo = new RiotAPI;
     $foo->setKey('Your-API-KEY');
+    $foo->setRegion('na');
     $foo->getChampions();
     
     
