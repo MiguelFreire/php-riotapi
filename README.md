@@ -1,4 +1,4 @@
-Riot API PHP
+Riot API PHP (DEPRECATED) DO NOT USE
 ===========
 
 Riot API ported to PHP!
